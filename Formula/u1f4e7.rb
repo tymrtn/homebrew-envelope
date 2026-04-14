@@ -4,8 +4,8 @@
 class U1f4e7 < Formula
   desc "Envelope Email — BYO mailbox email client with agent-native primitives"
   homepage "https://u1f4e7.com"
-  url "https://github.com/tymrtn/envelope-email/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "e91dfa25a3db61986480c49e97caa6d8b3c66899abc2b94aa8cbce1b6a173e90"
+  url "https://github.com/tymrtn/envelope-email/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "9f1a7175adaf11c15bf83c6e3dea9ff801cb6cc88cefbc605b83412020a6b2ec"
   license "FSL-1.1-ALv2"
 
   depends_on "rust" => :build
@@ -15,6 +15,6 @@ class U1f4e7 < Formula
   end
 
   test do
-    assert_match "envelope", shell_output("#{bin}/envelope --version")
+    assert_match "envelope 0.4.0", shell_output("#{bin}/envelope --version")
   end
 end
